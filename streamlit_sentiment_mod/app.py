@@ -69,15 +69,15 @@ use_lr = st.checkbox('Logistic Regression')
 
 if st.button("Analyze"):
     if not input_text:
-        st.write("Please enter the text for analysis.")
+        st.write("Por favor, introduzca el texto para su análisis.")
     elif not (use_nb or use_svm or use_lr):
-        st.write("Please select at least one model for analysis.")
+        st.write("Seleccione al menos un modelo para analizar.")
     else:
         # Process the input text
         input_text_processed = preprocess_text(input_text)
         input_text_vect = vectorizer.transform([input_text_processed])
 
-        st.write(f"**Input Text:** {input_text}")
+        st.write(f"**Ingrese el texto:** {input_text}")
         
         # Prediction using Naive Bayes
         if use_nb:
