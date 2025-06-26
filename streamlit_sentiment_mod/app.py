@@ -23,8 +23,7 @@ except NameError:
     # __file__ puede no estar definido en ejecución interactiva (ej: Streamlit Cloud)
     ruta_script = os.path.abspath(sys.argv[0])
 
-st.subheader("📍 Ruta del script ejecutado:")
-st.code(ruta_script)
+
 # **********************
 
 # Function for text preprocessing
@@ -39,7 +38,7 @@ def preprocess_text(text):
     return text
 
 # View the path
-st.write("Autor: Julio Bernal")
+st.write("Autor: Pedro Chiroque")
 st.write("Version: 1.0")
 #import os
 #st.write("📂 Ruta actual:", os.getcwd())
