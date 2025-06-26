@@ -56,13 +56,13 @@ lr_model = joblib.load('./streamlit_sentiment/model/logistic_regression_model.pk
 
 # App title
 st.title("Tweet Sentiment Analysis App")
-st.write("Enter the text you want to analyze for sentiment:")
+st.write("Introduzca el texto que desea analizar para determinar el sentimiento:")
 
 # User input text
-input_text = st.text_area("Input text here")
+input_text = st.text_area("Introduzca el texto aquí")
 
 # Model selection
-st.write("Select models for sentiment analysis:")
+st.write("Selecciona el modelo para analizar el sentimiento:")
 use_nb = st.checkbox('Naive Bayes')
 use_svm = st.checkbox('SVM')
 use_lr = st.checkbox('Logistic Regression')
