@@ -67,7 +67,7 @@ use_nb = st.checkbox('Naive Bayes')
 use_svm = st.checkbox('SVM')
 use_lr = st.checkbox('Logistic Regression')
 
-if st.button("Analyze"):
+if st.button("Analizar"):
     if not input_text:
         st.write("Por favor, introduzca el texto para su análisis.")
     elif not (use_nb or use_svm or use_lr):
